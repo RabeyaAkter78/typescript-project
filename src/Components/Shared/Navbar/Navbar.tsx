@@ -31,7 +31,7 @@ const NavBar: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className='container mx-auto py-2'>
       <ConfigProvider
         theme={{
           components: {
@@ -86,7 +86,7 @@ const NavBar: React.FC = () => {
           title="Menu"
           placement="right"
           onClose={closeDrawer}
-          visible={drawerVisible}
+          open={drawerVisible}
         >
          <div className="flex flex-col items-center space-y-4 mb-2">
             <div className="flex flex-col items-center space-y-2 w-full">
