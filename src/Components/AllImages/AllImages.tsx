@@ -11,6 +11,9 @@ import featured1 from "../../assets/images/featured1.jpg"
 import featured2 from "../../assets/images/featured2.jpg"
 import featured3 from "../../assets/images/featured3.jpg"
 import featured4 from "../../assets/images/featured4.jpg"
+import tips1 from "../../assets/images/tips1.jpg"
+import tips2 from "../../assets/images/tips2.jpg"
+import book from "../../assets/images/book.png"
 
 export const AllImages ={
     logo,
@@ -26,6 +29,14 @@ export const AllImages ={
     featured2,
     featured3,
     featured4,
+    tips1,
+    tips2,
+    book,
+
+
+
+
+
 
 
 }
