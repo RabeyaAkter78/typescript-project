@@ -16,7 +16,7 @@ const NewsLetter = () => {
 
   return (
     <div className="bg-[#edeae1] my-20">
-      <div className="container mx-auto flex justify-start items-center gap-5">
+      <div className="container mx-auto flex flex-col md:flex-row justify-start items-center gap-5">
         <Image
           src={AllImages.book}
           alt="newsletter img"
@@ -24,7 +24,7 @@ const NewsLetter = () => {
           height={400}
           className="object-cover"
         />
-        <div>
+        <div className="mx-2 md:mx-0">
           <p className="text-buttonColor font-serif italic">
             Subscribe to our newsletter
           </p>
@@ -37,7 +37,7 @@ const NewsLetter = () => {
             autem officiis architecto eum numquam, ipsam voluptatem tempora
             cumque suscipit.
           </p>
-          <div className="flex justify-start items-center gap-5 py-10">
+          <div className="flex justify-start items-center py-10">
             <ConfigProvider
               theme={{
                 components: {
@@ -57,19 +57,29 @@ const NewsLetter = () => {
                 form={form}
                 initialValues={{ layout: formLayout }}
                 onValuesChange={onFormLayoutChange}
-                style={{ maxWidth: formLayout === "inline" ? "none" : 600 }}
+                style={{
+                  maxWidth: formLayout === "inline" ? "none" : 600,
+                }}
               >
-                <Form.Item>
-                  <Input placeholder="Name" />
-                </Form.Item>
-                <Form.Item>
-                  <Input placeholder="Email" />
-                </Form.Item>
-                <Form.Item>
-                  <button className="px-5 py-1 bg-buttonColor text-white">
-                    Subscribe
-                  </button>
-                </Form.Item>
+                {/* Wrapping the form items in a flexbox container */}
+                <div className="flex items-center space-x-4">
+                  {/* Name input with margin on small screens */}
+                  <Form.Item className="sm:mb-4 mb-0">
+                    <Input placeholder="Name" />
+                  </Form.Item>
+
+                  {/* Email input */}
+                  <Form.Item>
+                    <Input placeholder="Email" />
+                  </Form.Item>
+
+                  {/* Subscribe button, aligned with the input fields */}
+                  <Form.Item>
+                    <button className="px-5 py-1 bg-buttonColor text-white">
+                      Subscribe
+                    </button>
+                  </Form.Item>
+                </div>
               </Form>
             </ConfigProvider>
           </div>
