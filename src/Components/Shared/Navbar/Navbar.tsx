@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { ConfigProvider, Input, Layout, Drawer, Button } from 'antd';
 import Image from 'next/image';
 import { AllImages } from '@/Components/AllImages/AllImages';
-import { SearchOutlined, MenuOutlined } from "@ant-design/icons";
+import {  MenuOutlined } from "@ant-design/icons";
 import Link from 'next/link';
 
 const { Header } = Layout;
@@ -43,7 +43,7 @@ const NavBar: React.FC = () => {
         }}
       >
         <Layout>
-          <Header style={{ display: 'flex', height:"100px" }}>
+          <Header style={{ display: 'flex', }}>
             <div className='h-full flex w-full items-center justify-between'>
      {/* Logo Section */}
      <div className="navbar-logo">
@@ -64,11 +64,8 @@ const NavBar: React.FC = () => {
               <Search
               className='mb-0 mt-3'
                 placeholder="Search a Blog"
-
                 allowClear
-               
-                size="large"
-             
+                size="middle"
                 onSearch={onSearch}
               />
             </div>
@@ -109,7 +106,7 @@ const NavBar: React.FC = () => {
             placeholder="Search a Blog"
             allowClear
            
-            size="large"
+            size="middle"
          
             onSearch={onSearch}
           />
