@@ -48,7 +48,7 @@ const Destination = () => {
               <div>
                 <div className="relative">
                   <Image
-                    src={AllImages.destination2}
+                    src={AllImages.destination1}
                     alt="destination image"
                     layout="responsive"
                     width={1000}
@@ -86,7 +86,7 @@ const Destination = () => {
               <div>
                 <div className="relative">
                   <Image
-                    src={AllImages.destination3}
+                    src={AllImages.destination1}
                     alt="destination image"
                     layout="responsive"
                     width={1000}
@@ -124,7 +124,7 @@ const Destination = () => {
               <div>
                 <div className="relative">
                   <Image
-                    src={AllImages.destination4}
+                    src={AllImages.destination1}
                     alt="destination image"
                     layout="responsive"
                     width={1000}

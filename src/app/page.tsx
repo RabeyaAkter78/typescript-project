@@ -5,6 +5,7 @@ import Hero from "@/Components/Home/Hero/Hero";
 import NewsLetter from "@/Components/Home/Newsletter/NewsLetter";
 import TravelEssentials from "@/Components/Home/TravelEssentials/TravelEssentials";
 import TravelTips from "@/Components/Home/TravelTips/TravelTips";
+import Footer from "@/Components/Shared/Footer/Footer";
 import NavBar from "@/Components/Shared/Navbar/Navbar";
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <FeaturedBlogs />
         <TravelEssentials />
         <Destination />
+        <Footer />
       </div>
     </main>
   );
