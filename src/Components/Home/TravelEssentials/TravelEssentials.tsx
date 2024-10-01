@@ -2,6 +2,9 @@ import { AllImages } from "@/Components/AllImages/AllImages";
 import Sectiontitle from "@/Components/Shared/SectionTitle/Sectiontitle";
 import Image from "next/image";
 import { Rate } from "antd";
+
+import dynamic from "next/dynamic";
+
 const TravelEssentials = () => {
   const data = [
     {
@@ -62,7 +65,7 @@ const TravelEssentials = () => {
                 <p className="text-neutral-600 font-serif italic text-lg">
                   {product.price}{" "}
                 </p>
-                <p className="text-xl md:text-2xl font-bold uppercase hover:text-buttonColor transition-all my-1">
+                <p className="text-xl md:text-2xl font-bold uppercase hover:text-buttonColor transition-all translate my-1">
                   {product.name}{" "}
                 </p>
                 <p>{product.ratings} </p>
@@ -75,4 +78,8 @@ const TravelEssentials = () => {
   );
 };
 
-export default TravelEssentials;
+// export default TravelEssentials;
+
+export default dynamic(() => Promise.resolve(TravelEssentials), {
+  ssr: false,
+});

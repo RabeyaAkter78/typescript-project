@@ -2,3 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* <button className='btn bg-buttonColor px-5 py-2 my-5 font-semibold flex justify-center items-center gap-2'>
+Read More
+<MdOutlineArrowOutward className='h-5 w-5'/>
+</button> */

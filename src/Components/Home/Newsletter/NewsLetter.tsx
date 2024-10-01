@@ -62,9 +62,9 @@ const NewsLetter = () => {
                 }}
               >
                 {/* Wrapping the form items in a flexbox container */}
-                <div className="flex items-center space-x-4">
+                <div className="flex flex-col md:flex-row items-center justify-start  gap-2">
                   {/* Name input with margin on small screens */}
-                  <Form.Item className="sm:mb-4 mb-0">
+                  <Form.Item>
                     <Input placeholder="Name" />
                   </Form.Item>
 

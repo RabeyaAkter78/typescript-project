@@ -1,4 +1,5 @@
 import CategoryBlog from "@/Components/Home/CategoryBlog/CategoryBlog";
+import Destination from "@/Components/Home/Destination/Destination";
 import FeaturedBlogs from "@/Components/Home/FeaturedBlogs/FeaturedBlogs";
 import Hero from "@/Components/Home/Hero/Hero";
 import NewsLetter from "@/Components/Home/Newsletter/NewsLetter";
@@ -15,7 +16,8 @@ export default function Home() {
         <TravelTips />
         <NewsLetter />
         <FeaturedBlogs />
-        <TravelEssentials />  
+        <TravelEssentials />
+        <Destination />
       </div>
     </main>
   );
