@@ -2,7 +2,7 @@
 import { AllImages } from "@/Components/AllImages/AllImages";
 import Image from "next/image";
 import React, { useState } from "react";
-import { Button, ConfigProvider, Form, Input } from "antd";
+import { ConfigProvider, Form, Input } from "antd";
 
 type LayoutType = Parameters<typeof Form>[0]["layout"];
 

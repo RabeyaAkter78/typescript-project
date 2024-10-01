@@ -11,10 +11,11 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        buttonColor:"#3c553a"
+        buttonColor: "#3c553a",
+        primaryBackground: "#f1f1e7",
       },
       fontFamily: {
-        serif: ['Merriweather', 'serif'],
+        serif: ["Merriweather", "serif"],
       },
     },
   },
